@@ -1,0 +1,141 @@
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 20rem;
+    position: relative;
+}
+
+.calculator {
+    display: flex;
+    gap: 3.2rem;
+    padding: 5.2rem 24rem 3.5rem 5.7rem;
+}
+
+.calculator div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.calculator label{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    color: var(--Smokeygrey);
+}
+
+.calculator input{
+    width: 16rem;
+    height: 7.2rem;
+    border: 1px solid var(--Lightgrey);
+    border-radius: 0.5rem;
+    padding-left: 2.5rem;
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: var(--Offblack);
+}
+
+.calculator input:hover{
+    border:1px solid var(--Purple);
+}
+
+.calculator input:focus{
+    border:1px solid var(--Purple);
+}
+
+.calculator input:focus-visible{
+    border:1px solid var(--Purple);
+    outline: none;
+}
+
+.error{
+    color: var(--Lightred);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    padding-top: 1rem;
+}
+
+.arrow {
+    background-color: var(--Purple);
+    padding: 2.5rem;
+    border-radius: 5rem;
+    position: absolute;
+    right: 5.8rem;
+    top: 18.5rem;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    background-color: var(--Offblack);
+}
+
+.line {
+    background-color: var(--Lightgrey);
+    height: 0.1rem;
+    width: 87%;
+}
+
+.age {
+    display: flex;
+    flex-direction: column;
+    line-height: 11rem;
+    padding: 5.1rem 1rem 6.5rem 0;
+    margin-right: 16rem;
+}
+
+.days,
+.months,
+.years {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 10rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.months {
+    font-size: 10rem;
+}
+
+.days{
+    font-size: 10rem;
+}
+
+#days,
+#months,
+#years {
+    letter-spacing: 1.8rem;
+    color: var(--Purple);
+    font-size: 10rem;font-weight: 800;
+    font-style: italic;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.error-color{
+    color: var(--Lightred);
+}
+
+.error-border{
+    border-color: var(--Lightred);
+}

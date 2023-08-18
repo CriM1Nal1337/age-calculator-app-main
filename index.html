@@ -5,27 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Age calculator app</title>
 </head>
 
 <body>
   <main class="container">
     <div class="calculator">
-      <span class="day">day</span>
-      <input type="number">
-
-      <span class="month">month</span>
-      <input type="number">
-
-      <span class="year">year</span>
-      <input type="number">
+      <div>
+        <label for="day">Day</label>
+        <input type="text" id="day" name="day" placeholder="DD" min="1" max="31" step="1">
+        <span class="error hide">this field is required</span>
+      </div>
+      <div>
+        <label for="month">Month</label>
+        <input type="text" id="month" name="month" placeholder="MM" min="1" max="12" step="1">
+        <span class="error hide">this field is required</span>
+      </div>
+      <div>
+        <label for="year">Year</label>
+        <input type="text" id="year" name="year" placeholder="YYYY" min="1900" max="2023" step="1">
+        <span class="error hide">this field is required</span>
+      </div>
     </div>
-    <br>
+    <div class="line"></div>
     <img src="src/images/icon-arrow.svg" alt="arrow" class="arrow">
     <div class="age">
-      <div class="years"><span id="year">--</span><h1>years</h1></div>
-      <div class="months"><span id="month">--</span><h1>years</h1></div>
-      <div class="days"><span id="day">--</span><h1>years</h1></div>
+      <h1 class="years"><span id="years">--</span> years</h1>
+      <h2 class="months"><span id="months">--</span> months</h2>
+      <h2 class="days"><span id="days">--</span> days</h2>
     </div>
   </main>
   <footer class="attribution">

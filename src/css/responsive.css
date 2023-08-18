@@ -1,0 +1,51 @@
+@media (max-width:865px) {
+    .container{
+        border-bottom-right-radius: 10rem;
+    }
+
+    .calculator {
+        padding: 5rem 0.5rem 1.2rem 2.2rem;
+        gap: 0rem;
+        align-items: center;
+    }
+
+    .calculator div {
+        gap: 0;
+        width: 10.5rem;
+    }
+
+    .calculator label {
+        font-size: 1.3rem;
+    }
+
+    .calculator input {
+        width: 8.8rem;
+        height: 5.5rem;
+        font-size: 1.8rem;
+    }
+
+    .arrow {
+        width: 6.5rem;
+        padding: 2rem;
+        top: 15.5rem;
+        right: 13.8rem;
+    }
+
+    .age {
+        line-height: 7rem;
+        padding: 6rem 0 2.5rem 0;
+        margin: 0;
+    }
+
+    .days,
+    .months,
+    .years {
+        font-size: 5.5rem;
+    }
+
+    #days,
+    #months,
+    #years {
+        font-size: 5.5rem;
+    }
+}
