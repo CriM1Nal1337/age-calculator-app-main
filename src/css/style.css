@@ -123,19 +123,19 @@ body,
 #months,
 #years {
     letter-spacing: 1.8rem;
-    color: var(--Purple);
     font-size: 10rem;font-weight: 800;
     font-style: italic;
+    caret-color: var(--Purple);
 }
 
 .hide{
     visibility: hidden;
 }
 
-.error-color{
+.calculator label.error-color{
     color: var(--Lightred);
 }
 
-.error-border{
+.calculator input.error-border{
     border-color: var(--Lightred);
 }
